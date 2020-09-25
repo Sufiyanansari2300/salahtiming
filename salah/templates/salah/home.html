@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Salah Timing</title>
+    <style>
+        #table{
+            padding-left: 30%;
+            
+        }
+        table{
+        width: 60%; 
+        border-collapse: collapse;
+        border-spacing: 0;
+        /* box-shadow: 0 2px 15px rgba(64,64,64,.7); */
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+
+        }
+        td , th{
+        padding: 15px 20px;
+        text-align: center;
+        
+
+        }
+        th{
+        background-color: #ba68c8;
+        color: #fafafa;
+        font-family: 'Open Sans',Sans-serif;
+        font-weight: 200;
+        text-transform: uppercase;
+
+        }
+        tr{
+        width: 100%;
+        background-color: #fafafa;
+        font-family: 'Montserrat', sans-serif;
+        }
+        tr:nth-child(even){
+        background-color: #eeeeee;
+        }
+        .form{
+            padding-left: 40%;
+        }
+        #id{
+            padding-left: 50%;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #008000;">
+        <a class="navbar-brand" style="color: white" href="/">Salah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" style="color: white" href="/">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color: white" href="contact">Contact</a>
+            </li>
+              <li class="nav-item">
+              <a class="nav-link" style="color: white" href="search">Search</a>
+            </li>
+           
+            
+          </ul>
+          
+        </div>
+      </nav>
+      <div class="container">
+          <h2 style="text-align: center;">Darood Sharif</h2><br>
+          <p style="text-align: center;">اَللّٰھُمَّ صَلِّ عَلٰی مُحَمَّدٍ وَّعَلٰٓی اٰلِ مُحَمَّدٍ کَمَا صَلَّیْتَ عَلٰٓی اِبْرَاھِیْمَ وَعَلٰٓی اٰلِ اِبْرَاھِیْمَ اِنَّکَ حَمِیْدٌ مَّجِیْدٌ اَللّٰھُمَّ بَارِکْ عَلٰی مُحَمَّدٍ وَّعَلٰٓی اٰلِ مُحَمَّدٍ کَمَا بَارَکْتَ عَلٰٓی اِبْرَاھِیْمَ وَعَلٰٓی اٰلِ اِبْرَاھِیْمَ اِنَّکَ حَمِیْدٌ مَّجِیْدٌ
+        </p>
+      </div>
+      <div class="container">
+          <h2 style="text-align: center;">Hadees Sahih Bukhari, Vol 1, 528</h2><br>
+          <p>Abu hurairah radi allahu anhu se rivayat hai ki RasoolAllah (ﷺ) ne farmaya - “Agar kisi shakhs ke darwaze par ek nahar jari ho aur wo roz usmein paanch baar nahaye to tumhara kya guman hai kya uske badan par kuch bhi mail baqi rahega , Sahaba Radhi allahu anhuma ne arz kiya Nahi koi mail baqi nahi rahega , to Aap Sal-Allahu Alaihi Wasallam ne farmaya yahi misal paancho waqt ki namazo ki hai , ALLAH subhanahu inke jariye se gunahon ko mita deta hai.”</p>
+      </div>
+
+      <div>
+          <h3 class="container">You can also checkout the video on Youtube for Salah</h3></div>
+          <div class="container" style="margin-left: 40%;"><iframe width="150" height="150" src="https://www.youtube.com/embed/Pl8Ux5nZYa4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <div class="container" style="background-color: #008000;color: white;">
+      <div style="text-align: center;">
+          <p>
+              <h3>Ujjain Ki Tamam Jani-Mani Masjidon ke Namaz ke Awqat</h3>
+          </p></div>
+          <div style="text-align: center;">
+          <p><h3>Only for Ujjain(Madhya Pradesh)</h3></p>
+      </div>
+    </div>
+
+    <!-- <div class="row">
+        <div class="container card" style="width: 2rem">
+            <div class="card-body">
+                {% for i in no %}
+                <p>{{i}}</p>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="container card" style="width: 30rem">
+            <div class="card-body">
+                {% for i in masjids %}
+                <p>{{i}}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div> -->
+        <div id="table" class="container-fluid">
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td>S.No</td>
+                    <td>Name of Masjids</td>
+                </tr>
+                {% for i in list %}
+                <tr>
+                    <td>{{i.sno}}</td>
+                    <td>{{i.name}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <br>
+
+        <div class="container"><ul><li id="a">Kisi bhi Masjid ka Waqt-e-Namaz janne ke liye uska serial number neeche submit kare.</li></ul></div>
+        <div class="container">
+            <form class="form" action="display" method="GET">
+                {% csrf_token %}
+                <input type="number" name="number">
+                <div class="container" style="color: red;">
+                    {% for message in messages %}
+                    <h6>{{message}}</h6>
+                    {% endfor %}
+                </div>
+        
+                <br><button type="submit" class="btn btn-success">Show Timing</button>
+            </form>
+        </div>
+        <div style="padding-bottom: 5%;"></div>
+
+        
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
