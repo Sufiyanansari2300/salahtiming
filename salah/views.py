@@ -19,7 +19,7 @@ def contact(request):
     return render(request, "salah/contact.html")
 
 def display(request):
-    num = int(request.GET.get("number"))
+    num = int(request.GET['number'])
     Masjids = Masjid.objects.all()
     m = len(Masjids)
     if num >= 1 and num<=m:
